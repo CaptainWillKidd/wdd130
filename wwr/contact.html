@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WWR contact site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/contact.css">
+    <style>
+        h1 {
+            font-family: 'Oswald', sans-serif;
+        }
+        h2{
+            font-family: 'Work Sans', sans-serif;
+        }
+        p{
+            font-family: 'Work Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="container">
+    <header>
+        <div class="logo">
+            <img src="images/logo3_200.png" alt="Logo">
+        </div>
+        <nav class="links">
+            <a href="index.html">Index</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>      
+        <h1>Our Company Information</h1>
+        <article>
+            <p>Address: Estr. São Benedito, 1600 - Dos Carmos, Juquitiba - SP, 06950-000</p>
+            <p>Phone Number: +5554955784402</p>
+            <p>Email: raftingwwrcontact@gmail.com</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4336.474253800533!2d-47.10128435853345!3d-23.941845424002164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1729343876959!5m2!1spt-BR!2sbr" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </article>
+        <section>
+            <h2>Meet Us</h2>
+            <div>
+                <figure>
+                    <img src="images/employer_1.webp" alt="employer_1">
+                    <figcaption>Robert Cuscman - HR Treiner</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employer_2.jpg" alt="employer_2">
+                    <figcaption>Amanda Nunes - Marketing Leader</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employer_3.webp" alt="employer_3">
+                    <figcaption>Paola Martin - Co-CEO</figcaption>
+                </figure>
+            </div>
+        </section>
+        <h2>Contact Us</h2>
+        <h3>Send us a messege</h3>
+        <form action="submit-form" method="post">
+            
+            <fieldset>
+                <div class="form-item column2">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-item column2">
+                    <label for="email">Your Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </fieldset>
+            <fieldset>   
+                <label>Purpose of the Message</label>
+                <div>  
+                    <input type="radio" id="general" name="purpose" value="General Inquiry" required>
+                    <label for="general">General Inquiry</label><br>
+                    <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                    <label for="reservation">Reservation Question</label><br>
+                    <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                    <label for="suggestion">Website Suggestion</label><br>
+                </div>           
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+        
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Please subscribe me to the monthly newsletter</label><br>
+            </fieldset>
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+    <footer>
+        <p>©️2024 ☀️🏞️White Water Rafting☀️🏞️ Willian Alves Canuto</p>
+        <nav class="social">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="facebook">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.svg" alt="X">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram1.png" alt="Instagram">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,170 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary: #424242;
+    --secondary: #f8f8f8;
+    --accent1: #808080;
+    --accent2: #4c4c4c;
+}
+
+header {
+	display: grid;
+    grid-template-columns: auto 5fr;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    border: 50px solid var(--accent2);
+    background-color: var(--accent2);
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+.logo {
+    max-width: 200px;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: var(--secondary);
+}
+
+.links a{
+    text-decoration: none;
+    color: var(--secondary);
+    font-size: medium;
+    border: 2px solid var(--primary);
+    background-color: var(--accent2);
+    padding: 5px 10px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+main{
+    color: var(--accent1);
+    font-size: 15px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+footer{
+    display: flex;
+    justify-self: flex-end;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+footer img{
+    max-width: 25px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+footer img:hover{
+    transform: scale(1.1);
+}
+
+figure{
+    position: relative;
+    overflow: hidden;
+}
+
+figure img{
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+}
+
+figcaption{
+    text-align: center;
+    color: var(--secondary);
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 60%;
+}
+
+form{
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+}
+
+fieldset{
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+label{
+    text-align: center;
+    padding-right: 1rem;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"]{
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button{
+    margin: 1rem;
+    background-color: var(--accent1);
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+.form-item{
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+
+.column2{
+    grid-template-columns: 1fr 2fr;
+}
