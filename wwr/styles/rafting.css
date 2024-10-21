@@ -147,9 +147,6 @@ footer img:hover{
     color: var(--primary);
     font-size: 40px;
     flex-grow: 1;
-}
-
-.history{
     display: grid;
     grid-template-columns: auto;
     font-size: large;
