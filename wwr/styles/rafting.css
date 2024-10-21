@@ -61,7 +61,6 @@ body {
 
 main{
     color: var(--accent1);
-    font-size: 15px;
 }
 
 .container{
@@ -144,9 +143,9 @@ footer img:hover{
     align-items: center;
 }
 
-.hero article p{
+.history{
     color: var(--primary);
-    font-size: 30px;
+    font-size: 40px;
     flex-grow: 1;
 }
 
